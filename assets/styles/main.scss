@@ -1,0 +1,172 @@
+---
+---
+
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Newsreader&display=swap");
+
+:root {
+	// spacing
+	--space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);
+	--space-2xs: clamp(0.56rem, calc(0.49rem + 0.37vw), 0.75rem);
+	--space-xs: clamp(0.88rem, calc(0.78rem + 0.49vw), 1.13rem);
+	--space-s: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
+	--space-m: clamp(1.69rem, calc(1.47rem + 1.1vw), 2.25rem);
+	--space-l: clamp(2.25rem, calc(1.96rem + 1.46vw), 3rem);
+	--space-xl: clamp(3.38rem, calc(2.94rem + 2.2vw), 4.5rem);
+	--space-2xl: clamp(4.5rem, calc(3.91rem + 2.93vw), 6rem);
+	--space-3xl: clamp(6.75rem, calc(5.87rem + 4.39vw), 9rem);
+
+	// typography
+	--font--2: clamp(0.74rem, calc(0.8rem + -0.08vw), 0.78rem);
+	--font--1: clamp(0.94rem, calc(0.92rem + 0.09vw), 0.98rem);
+	--font-0: clamp(1.13rem, calc(1.05rem + 0.37vw), 1.31rem);
+	--font-1: clamp(1.35rem, calc(1.19rem + 0.78vw), 1.75rem);
+	--font-2: clamp(1.62rem, calc(1.34rem + 1.39vw), 2.33rem);
+	--font-3: clamp(1.94rem, calc(1.49rem + 2.27vw), 3.11rem);
+	--font-4: clamp(2.33rem, calc(1.63rem + 3.53vw), 4.14rem);
+	--font-5: clamp(2.8rem, calc(1.74rem + 5.32vw), 5.52rem);
+
+	// colour
+	--emerald: rgb(41, 121, 85);
+	--font-colour: #46343a;
+	--off-white: #f5f5f4;
+
+	// Fonts
+	--font-serif: NewsReader, "Times New Roman", Times, serif;
+	--font-sans-serif: "Fjalla One", sans-serif;
+}
+
+body {
+	background-color: var(--off-white);
+	display: flex;
+	flex-direction: column;
+	text-rendering: optimizeSpeed;
+	font-family: var(--font-serif);
+	color: var(--font-colour);
+}
+
+main {
+	flex: auto;
+}
+
+h1 {
+	font-size: var(--font-5);
+	font-family: var(--font-sans-serif);
+	letter-spacing: 1.2px;
+	color: var(--emerald);
+}
+h2 {
+	font-size: var(--font-3);
+	font-family: var(--font-sans-serif);
+}
+
+h3 {
+	font-size: var(--font-2);
+}
+
+p,
+li {
+	font-size: var(--font-0);
+	max-width: 55ch;
+}
+
+a {
+	color: var(--font-colour);
+	text-decoration-color: var(--emerald);
+
+	&:hover {
+		text-underline-offset: 4px;
+	}
+}
+
+.wrapper {
+	width: 90vw;
+	width: clamp(16rem, 93vw, 75rem);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.region {
+	padding-top: var(--space-m);
+	padding-bottom: var(--space-m);
+	max-width: 50rem;
+}
+
+.stack {
+	--space: var(--space-s);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+		h1 + * {
+			--space: var(--space-l);
+			margin-block-start: var(--space);
+		}
+
+
+	> * {
+		margin-block: 0;
+	}
+
+	> * + * {
+		margin-block-start: var(--space);
+	}
+}
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space, 1rem);
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.categories {
+	list-style-type: none;
+	padding-left: 0;
+
+	&__item {
+		border: 2px solid var(--emerald);
+		text-transform: capitalize;
+		font-family: var(--font-sans-serif);
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background-color: var(--emerald);
+		}
+
+		a {
+			text-decoration: none;
+			padding: var(--space-3xs) var(--space-2xs);
+			display: inline-block;
+			&:hover {
+				color: var(--off-white);
+			}
+		}
+	}
+}
+
+.site-footer {
+	border-top: 2px solid var(--emerald);
+
+	display: flex;
+	padding-top: var(--space-s);
+	padding-bottom: var(--space-m);
+}
+
+.ramblings {
+	--space: var(--space-xl);
+
+	list-style-type: none;
+	padding-left: 0;
+
+	&__item {
+		h2, h3, h4 {
+			font-size: var(--font-2);
+			margin-bottom: clamp(0.8rem, 1rem, 1.5rem);
+		}
+	}
+}
+
+@import "site-head";

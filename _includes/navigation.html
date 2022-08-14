@@ -1,0 +1,15 @@
+<header class="[ wrapper ] [ site-head ] [ space-between ]">
+	<p>Ravi</p>
+	<nav class="[ stack ] [ site-head__navigation ]">
+		<ul>
+		{% for item in site.data.navigation %}
+			<li>
+				<a href="{{ item.link }}" {% if page.url == item.link %}class="current-link"{% endif %}>
+					{{ item.name }}
+				</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</nav>
+</header>
+
