@@ -4,20 +4,22 @@ layout: default
 
 <article class="[ stack--l ] [ wrapper ] [ region ]">
     <h1 class="[ post__title ]">{{ page.title }}</h1>
-    <dl class="[ post__meta ]">
-        <dd>Published:</dd>
-        <dt>{{ page.date | date_to_string }}</dt>
-        <dd>Reading time:</dd>
-        <dt>About {{ page.content | reading_time }}</dt>
-        <dd>Filed under:</dd>
-        <dt>
-            {% for category in page.categories %}
-            {% unless category == "writing" %}
-            <span><a href="/categories/{{category}}"> {{ category | unslugify }}</a></span>
-            {% endunless %}
-            {% endfor %}
-        </dt>
-    </dl>
+    <div class="[ post__meta-container ]">
+        <dl class="[ post__meta ]">
+            <dd>Published</dd>
+            <dt>{{ page.date | date_to_string }}</dt>
+            <dd>Reading time</dd>
+            <dt>About {{ page.content | reading_time }}</dt>
+            <dd>Filed under</dd>
+            <dt class="[ post__meta-category ]">
+                {% for category in page.categories %}
+                {% unless category == "writing" %}
+                <a href="/categories/{{category}}"> {{ category | unslugify }}</a></span>
+                {% endunless %}
+                {% endfor %}
+            </dt>
+        </dl>
+    </div>
 
     <section class="[ stack ] [ post__body ]">
         {{ content }}

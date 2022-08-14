@@ -5,8 +5,7 @@ summary: "With the recent news of Elon Musk buying Twitter for obscene amounts, 
 build online communities in spaces designed with people prioritised, and ungoverned by billionaires and corporations."
 ---
 
-[Elon Musk recently purchased Twitter for $44bn](https://www.theguardian.com/technology/2022/apr/25/twitter-elon-musk-buy-takeover-deal-tesla)
-. I suppose if you're made of cash, you can probably find a few reasons that make this a worthwhile buy. You've got the
+[Elon Musk recently purchased Twitter for $44bn](https://www.theguardian.com/technology/2022/apr/25/twitter-elon-musk-buy-takeover-deal-tesla). I suppose if you're made of cash, you can probably find a few reasons that make this a worthwhile buy. You've got the
 reputation laundering (Musk has contextualised his purchase as a move for "freedom"; we'll see what that actually means)
 , the power of having control over a social network that has profoundly shaped the way we communicate online, the
 intellectual property, and the social data of over 200 million users.
