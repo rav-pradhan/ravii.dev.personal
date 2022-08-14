@@ -1,6 +1,6 @@
 ---
 title: "Mastodon and the Indie Web: rediscovering ownership in social networks"
-tags: ['indie web', 'fediverse']
+layout: post
 summary: "With the recent news of Elon Musk buying Twitter for obscene amounts, some thoughts on what is out there to
 build online communities in spaces designed with people prioritised, and ungoverned by billionaires and corporations."
 ---
