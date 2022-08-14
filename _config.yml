@@ -4,3 +4,18 @@ plugins:
   - jekyll-seo-tag
 sass:
   sass_dir: assets/styles
+social:
+  name: Ravi Pradhan
+  links:
+    - https://twitter.com/raviipx
+    - https://github.com/rav-pradhan
+    - https://www.linkedin.com/in/ravipradhan/
+logo: /assets/images/logo.png
+twitter:
+  username: raviipx
+  creator: raviipx
+  card: summary
+author: Ravi Pradhan
+url: https://ravii.dev
+tagline: The personal website for Ravi Pradhan, a software engineer and inclusive designer based in Cardiff, Wales.
+locale: en_GB

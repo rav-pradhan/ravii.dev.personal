@@ -1,9 +1,8 @@
 ---
 title: On the fundamental value of code katas
-tags: ['practice']
-theme: "writing"
-summary: "We all understand the value of code katas in sharpening specific technical skills. However, well-reasoned
-katas allow us to go beyond this and learn things far more fundamental to being an engineer."
+layout: post
+description: "The value of code katas in sharpening specific technical skills is clear. However, well-reasoned
+katas allow us to go beyond this and learn things far more fundamental to being a software engineer."
 ---
 
 A kata is designed to embed understanding of a pattern. They are inherent to a number of martial arts, where katas are

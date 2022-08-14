@@ -1,7 +1,7 @@
 ---
 title: Anxieties and Ambience
-tags: ['personal', 'music', 'work']
-summary: "Or how I destress with discordance."
+layout: post
+description: "Or how I destress with discordance."
 ---
 
 Life has been stressful recently, as I'm sure it has been for many here in the UK and around the world. Pandemic, health

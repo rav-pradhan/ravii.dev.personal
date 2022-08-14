@@ -1,7 +1,7 @@
 ---
 title: Organisations, developers and trust
-tags: ["work culture", "organisations"]
-summary: "When digital services are predicated on long-lived and well-maintained codebases, it's important to their
+layout: post
+description: "When digital services are predicated on long-lived and well-maintained codebases, it's important to their
 ongoing success that the developers who work on them them are listened to."
 ---
 
