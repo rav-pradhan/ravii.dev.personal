@@ -65,7 +65,7 @@ These tools allow people to share things on their own domain and syndicate it to
 feeds, if they wish to. However, there is a higher barrier to entry as it requires some proficiency in web development -
 although there are [tools](https://sitejs.org/) being built to aid people who aren't comfortable with coding.
 
-## Looking to the future - another way is possible
+## Looking to the future
 
 What both the Indie Web movement and Mastodon show is that there is another way of social networking that focuses on
 people rather than social data commodification.

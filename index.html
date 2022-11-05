@@ -6,8 +6,9 @@ title: Home
 <article class="[ wrapper ] [ region stack ] [ home ]">
   <h1>Hello, I'm Ravi</h1>
   <p>
-    This little corner of the web is my <a href="/blog">personal soapbox</a>, where you'll find me
-    rambling about things like software, life, music, and Wales, probably.
+    This little corner of the web is my <a href="/blog">personal soapbox</a>,
+    where you'll find me rambling about things like software, life, music, and
+    Wales, probably.
   </p>
   <p>
     For work, I'm a senior software engineer at
@@ -15,8 +16,37 @@ title: Home
     organisations deliver sustainable, inclusive digital services.
   </p>
   <p>
-    I also do a bit of work on the side as a freelance web developer and
-    consultant. If you're interested in how I can potentially help you,
-    <a href="https://ravipradhan.co.uk/"> take a look here.</a>
+    I'm also available to take on small web development projects. Feel free to
+    reach out to me at
+    <a
+      id="obfuscation"
+      class="accent"
+      href="#"
+      data-encoded="18707d747477586a796e71686a797c707976367b77366d73"
+      >[email protected]</a
+    >
   </p>
+  <script>
+    const email = document.getElementById("obfuscation");
+    const encodedEmail = email.dataset.encoded;
+    function decodeEmail(encodedString) {
+      let email = "";
+      const keyInHex = encodedString.substr(0, 2);
+
+      const key = parseInt(keyInHex, 16);
+
+      for (let i = 2; i < encodedString.length; i += 2) {
+        const charInHex = encodedString.substr(i, 2);
+        const char = parseInt(charInHex, 16);
+        const output = char ^ key;
+        email += String.fromCharCode(output);
+      }
+
+      return email;
+    }
+
+    const decodedEmail = decodeEmail(encodedEmail);
+    email.href = `mailto:${decodedEmail}`;
+    email.innerText = `${decodedEmail}.`;
+  </script>
 </article>

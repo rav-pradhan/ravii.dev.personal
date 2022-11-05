@@ -6,7 +6,7 @@ module ReadingTimeFilter
     words = input.split.size
     minutes = (words / average_words_per_minute).floor
 
-    minutes > 0 ? "#{minutes} #{minutes_label}" : "1 #{minutes_label}"
+    minutes > 1 ? "#{minutes} #{minutes_label}" : "1 minute"
   end
 end
 
