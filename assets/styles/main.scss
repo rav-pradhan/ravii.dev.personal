@@ -224,8 +224,15 @@ a {
   border-top: 2px solid var(--emerald);
 
   display: flex;
+  justify-content: space-between;
   padding-top: var(--space-s);
   padding-bottom: var(--space-m);
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--space-s);
+  }
 }
 
 .ramblings {

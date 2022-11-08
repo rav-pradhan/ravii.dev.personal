@@ -1,5 +1,5 @@
 ---
-title: "Mastodon and the Indie Web: rediscovering ownership in social networks"
+title: "Mastodon and the Indie Web: rediscovering ownership in social data"
 layout: post
 description: "In light of Elon Musk's attempt to buy Twitter, some thoughts on what is out there to
 build online communities in spaces designed with people prioritised, and ungoverned by billionaires and corporations."
