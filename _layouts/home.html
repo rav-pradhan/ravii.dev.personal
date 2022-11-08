@@ -35,7 +35,9 @@
   <body>
     {% include navigation.html %}
     <main id="main-content">
-      <article class="[ stack ] [ wrapper ] [ region ]">{{ content }}</article>
+      <article class="[ wrapper ] [ region stack ] [ home ]">
+        {{ content }}
+      </article>
     </main>
     <footer class="[ wrapper ] [ site-footer ] [ space-between ]">
       <p>Ravi Pradhan &copy; {{ "now" | date: "%Y" }}</p>

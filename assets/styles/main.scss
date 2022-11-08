@@ -51,7 +51,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-sans-serif);
 }
 
@@ -68,6 +69,10 @@ h2 {
 
 h3 {
   font-size: var(--font-2);
+}
+
+h4 {
+  font-size: var(--font-1);
 }
 
 p,
@@ -131,6 +136,12 @@ a {
     > * + * {
       margin-block-start: var(--space);
     }
+  }
+}
+
+.home {
+  h1 + * {
+    margin-block-start: var(--space-s);
   }
 }
 
@@ -224,12 +235,15 @@ a {
   border-top: 2px solid var(--emerald);
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: var(--space-s);
   padding-top: var(--space-s);
   padding-bottom: var(--space-m);
 
   &__links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: var(--space-s);
   }
