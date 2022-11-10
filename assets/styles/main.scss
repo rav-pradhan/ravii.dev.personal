@@ -215,7 +215,7 @@ a {
     border: 2px solid var(--emerald);
     text-transform: capitalize;
     font-family: var(--font-headings);
-    transition: background-color 0.2s ease-in-out;
+    font-weight: 700;
 
     &:hover {
       background-color: var(--emerald);
