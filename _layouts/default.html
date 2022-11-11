@@ -33,10 +33,7 @@
     {% feed_meta %} {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
-    <main id="main-content">
-      <article class="[ stack ] [ wrapper ] [ region ]">{{ content }}</article>
-    </main>
+    {% include navigation.html %} {% include main.html %}
     <footer class="[ wrapper ] [ site-footer ] [ space-between ]">
       {% include attributions.html %}
     </footer>
