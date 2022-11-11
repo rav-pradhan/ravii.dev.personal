@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -35,12 +35,28 @@
   <body>
     {% include navigation.html %}
     <main id="main-content">
-      <article class="[ stack ] [ wrapper ] [ region ]">{{ content }}</article>
+      <article class="[ stack ] [ wrapper region ]">{{ content }}</article>
     </main>
-    <footer class="[ wrapper ] [ site-footer ] [ space-between ]">
-      <section
-        class="[ region ][ site-footer__attributions ] [ remove-padding ]"
-      >
+    <footer class="[ wrapper region ] [ space-between ]">
+      <section class="[ post__about-the-author ]">
+        <img
+          src="/assets/images/me.jpeg"
+          alt="The author, Ravi Pradhan, wearing a mobile VR headset. The photo has been stylised with light dithering."
+        />
+        <div class="[ stack ]">
+          <h3>About the Author</h3>
+          <p>
+            <em>
+              I'm a generalist software engineer and technologist with
+              particular interests in web technologies, accessible digital
+              services, civic tech and the intersection between ethics and
+              digital culture.
+            </em>
+          </p>
+        </div>
+      </section>
+
+      <section class="site-footer__attributions">
         <p>
           Ravi Pradhan &copy; {{ "now" | date: "%Y" }}. Unless otherwise stated,
           content on this site is licensed under a
@@ -50,7 +66,6 @@
           <a href="https://jekyllrb.com/">Jekyll</a>.
         </p>
       </section>
-      <div class="[ site-footer__links ]"></div>
     </footer>
   </body>
 </html>

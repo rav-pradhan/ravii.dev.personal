@@ -40,12 +40,19 @@
       </article>
     </main>
     <footer class="[ wrapper ] [ site-footer ] [ space-between ]">
-      <p>Ravi Pradhan &copy; {{ "now" | date: "%Y" }}</p>
-      <div class="[ site-footer__links ]">
-        <p><a rel="me" href="https://toot.wales/@ravi">Mastodon</a></p>
-        <p><a href="https://github.com/rav-pradhan/">GitHub</a></p>
-        <p><a href="https://soundcloud.com/raviipx">Soundcloud</a></p>
-      </div>
+      <section
+        class="[ region ][ site-footer__attributions ] [ remove-padding ]"
+      >
+        <p>
+          Ravi Pradhan &copy; {{ "now" | date: "%Y" }}. Unless otherwise stated,
+          content on this site is licensed under a
+          <a href="https://creativecommons.org/licenses/by/4.0/"
+            >Creative Commons Attribution 4.0 International license</a
+          >. This site was built with
+          <a href="https://jekyllrb.com/">Jekyll</a>.
+        </p>
+      </section>
+      <div class="[ site-footer__links ]"></div>
     </footer>
   </body>
 </html>

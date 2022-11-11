@@ -159,6 +159,23 @@ a {
     font-size: var(--font-4);
   }
 
+  &__about-the-author {
+    border-top: 2px solid var(--emerald);
+    padding: var(--space-m) 0;
+    display: flex;
+    gap: var(--space-m);
+
+    img {
+      width: 30%;
+      height: 30%;
+      border-radius: 8px;
+    }
+
+    h3 {
+      font-size: var(--font-1);
+    }
+  }
+
   &__meta-container {
     max-width: 55ch;
   }
@@ -243,11 +260,23 @@ a {
   padding-top: var(--space-s);
   padding-bottom: var(--space-m);
 
+  &__attributions {
+    text-align: center;
+    margin: 0 auto;
+    p {
+      font-size: var(--font--1);
+      max-width: 100%;
+    }
+  }
+
   &__links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: var(--space-s);
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: var(--space-s);
+      list-style-type: none;
+    }
   }
 }
 
@@ -273,3 +302,8 @@ a {
 }
 
 @import "site-head";
+
+.remove-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
