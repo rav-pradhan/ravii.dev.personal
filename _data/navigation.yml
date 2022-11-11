@@ -1,8 +1,14 @@
 - name: Home
   link: /
+  url: /
+- name: About
+  link: /about
+  url: /about.html
 - name: Blog
   link: /blog
+  url: /blog.html
 - name: Uses
   link: /uses
+  url: /uses.html
 - name: RSS
   link: /feed.xml
