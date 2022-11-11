@@ -2,6 +2,8 @@
   padding-top: var(--space-s);
   padding-bottom: var(--space-m);
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
   justify-content: space-between;
   align-items: center;
 
@@ -25,8 +27,9 @@
 
   &__navigation {
     ul {
-      list-style-type: none;
       display: flex;
+      list-style-type: none;
+      padding: 0;
       gap: var(--space-s);
     }
 
