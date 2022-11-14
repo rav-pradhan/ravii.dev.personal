@@ -157,6 +157,7 @@ a {
 .post {
   &__title {
     font-size: var(--font-4);
+    line-height: normal;
   }
 
   &__about-the-author {
@@ -219,6 +220,15 @@ a {
 
     :is(h2, h3) + * {
       --space: var(--space-s);
+    }
+  }
+
+  &__summary {
+    blockquote {
+      padding-left: var(--space-s);
+      margin-bottom: var(--space-m);
+      max-width: 65ch;
+      border-left: 10px solid var(--emerald);
     }
   }
 }

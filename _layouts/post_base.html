@@ -35,7 +35,9 @@
   <body>
     {% include navigation.html %}
     <main id="main-content">
-      <article class="[ stack ] [ wrapper region ]">{{ content }}</article>
+      <article class="[ stack ] [ wrapper region ] [ h-entry ]">
+        {{ content }}
+      </article>
     </main>
     <footer class="[ wrapper region ] [ space-between ]">
       {% include about_the_author.html %} {% include attributions.html %}

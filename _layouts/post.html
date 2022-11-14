@@ -2,12 +2,19 @@
 layout: post_base
 ---
 
-<h1 class="[ post__title ]">{{ page.title }}</h1>
+<h1 class="[ post__title ] [ p-name ]">{{ page.title }}</h1>
+<aside class="[ post__summary ] [ p-summary ]">
+  <blockquote>
+    <p><em>{{ page.description }}</em></p>
+  </blockquote>
+</aside>
 <div class="[ post__meta-container ]">
   <dl class="[ post__meta ]">
     {% if page.date %}
     <dd>Published</dd>
-    <dt>{{ page.date | date_to_string }}</dt>
+    <dt class="[ dt-published ]" datetime="{{page.date}}">
+      {{ page.date | date_to_string }}
+    </dt>
     {% endif %}
 
     <dd>Reading time</dd>
@@ -24,4 +31,4 @@ layout: post_base
   </dl>
 </div>
 
-<section class="[ stack ] [ post__body ]">{{ content }}</section>
+<section class="[ stack ] [ post__body ] [ e-content ]">{{ content }}</section>
