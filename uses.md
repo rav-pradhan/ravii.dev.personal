@@ -1,5 +1,6 @@
 ---
 layout: post
+description: "I get asked what I use every now and then. Here's the one-stop shop for info on all of the devices and apps I use."
 title: What I Use
 ---
 

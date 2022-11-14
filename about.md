@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "A few words on who I am, my experiences and interests."
 title: Who am I?
 ---
 

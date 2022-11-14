@@ -10,6 +10,7 @@ social:
     - https://twitter.com/raviipx
     - https://github.com/rav-pradhan
     - https://www.linkedin.com/in/ravipradhan/
+    - https://toot.wales/@ravi
 logo: /assets/images/logo.png
 twitter:
   username: raviipx
@@ -17,5 +18,5 @@ twitter:
   card: summary
 author: Ravi Pradhan
 url: https://ravii.dev
-tagline: The personal website for Ravi Pradhan, a software engineer and inclusive designer based in Cardiff, Wales.
+tagline: The personal website for Ravi Pradhan, a generalist software engineer, technologist, and inclusive designer based in Cardiff, Wales.
 locale: en_GB
