@@ -233,6 +233,10 @@ a {
   }
 }
 
+.accent {
+  color: var(--emerald);
+}
+
 .categories {
   list-style-type: none;
   padding-left: 0;
@@ -312,6 +316,7 @@ a {
 }
 
 @import "site-head";
+@import "skip-link";
 
 .remove-padding {
   padding-top: 0;
