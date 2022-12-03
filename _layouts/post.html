@@ -2,33 +2,35 @@
 layout: post_base
 ---
 
-<h1 class="[ post__title ] [ p-name ]">{{ page.title }}</h1>
-<aside class="[ post__summary ] [ p-summary ]">
-  <blockquote>
-    <p><em>{{ page.description }}</em></p>
-  </blockquote>
-</aside>
-<div class="[ post__meta-container ]">
-  <dl class="[ post__meta ]">
-    {% if page.date %}
-    <dd>Published</dd>
-    <dt class="[ dt-published ]" datetime="{{page.date}}">
-      {{ page.date | date_to_string }}
-    </dt>
-    {% endif %}
+<article class="[ stack stack--xs ]">
+  <h1 class="[ post__title ] [ p-name ]">{{ page.title }}</h1>
+  <aside class="[ post__summary ] [ p-summary ]">
+    <blockquote>
+      <p><em>{{ page.description }}</em></p>
+    </blockquote>
+  </aside>
+  <div class="[ post__meta-container ]">
+    <dl class="[ post__meta ]">
+      {% if page.date %}
+      <dd>Published</dd>
+      <dt class="[ dt-published ]" datetime="{{page.date}}">
+        {{ page.date | date_to_string }}
+      </dt>
+      {% endif %}
 
-    <dd>Reading time</dd>
-    <dt>About {{ page.content | reading_time }}</dt>
+      <dd>Reading time</dd>
+      <dt>About {{ page.content | reading_time }}</dt>
 
-    {% if page.categories %}
-    <dd>Filed under</dd>
-    <dt class="[ post__meta-category ]">
-      {% for category in page.categories %} {% unless category == "writing" %}
-      <a href="/categories/{{category}}"> {{ category | unslugify }}</a>
-      {% endunless %} {% endfor %}
-    </dt>
-    {% endif %}
-  </dl>
-</div>
+      {% if page.categories %}
+      <dd>Filed under</dd>
+      <dt class="[ post__meta-category ]">
+        {% for category in page.categories %} {% unless category == "writing" %}
+        <a href="/categories/{{category}}"> {{ category | unslugify }}</a>
+        {% endunless %} {% endfor %}
+      </dt>
+      {% endif %}
+    </dl>
+  </div>
+</article>
 
 <section class="[ stack ] [ post__body ] [ e-content ]">{{ content }}</section>

@@ -20,3 +20,9 @@ author: Ravi Pradhan
 url: https://ravii.dev
 tagline: The personal website for Ravi Pradhan, a generalist software engineer, technologist, and inclusive designer based in Cardiff, Wales.
 locale: en_GB
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/rp-logo.jpg
