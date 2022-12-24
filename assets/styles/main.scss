@@ -2,7 +2,7 @@
 ---
 
 @import "reset";
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Atkinson+Hyperlegible&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Atkinson+Hyperlegible:wght@400;700&display=swap");
 
 :root {
   // spacing
@@ -217,6 +217,22 @@ a {
 
     :is(h2, h3) + * {
       --space: var(--space-s);
+    }
+
+    & .footnotes {
+        * {
+            font-size: var(--font--1);
+            max-width: 65ch;
+        }
+
+        ol {
+            padding-left: 1rem;
+        }
+
+    }
+
+    sup {
+        padding-left: 2px;
     }
   }
 
