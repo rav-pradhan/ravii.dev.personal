@@ -14,39 +14,35 @@ Video calling services like Microsoft Teams and Google Meet are great for meetin
 
 - you would be sharing your IDE or text editor on the screen
 - you would be using a number of keyboard shortcuts that aren't visible to others on the call to navigate through a codebase at speed
+- you may have screen-sharing latency issues or lowered bandwidth that causes the screen-share to look pixellated and unclear
 
 When you consider these, it's understandable why remote collaborative coding can become tiring, lead to disengagement and even contribute to burnout.
 
-In my team, we code collaboratively the majority of the time. Soon into remote pairing and mobbing sessions, we realised that what worked in the office didn't necessarily translate into a remote context. Those aforementioned points of friction, while individually small, compounded to an unsustainable workflow.
+In my team, we code collaboratively the majority of the time. Soon into remote pairing and mobbing sessions, we realised that what worked in the office didn't necessarily translate into a remote context. Those aforementioned points of friction, while individually small, compounded to create what we knew would be an unsustainable workflow in the long-run.
 
-We've learned a lot since these initial experiences, so here are a few things we've picked up that might help if you already do - or have been thinking about doing - remote collaborative coding in your teams.
+We've learned a lot since these initial experiences, so here are a few things we've picked up that might help if you already do &mdash; or have been thinking about doing &mdash; remote collaborative coding in your teams.
 
-## "Code together" tools are invaluable
+## "Code together" tools go a long way to help
 
-One of the ways to reduce friction is to use collaborative coding software. Since the start of the pandemic, a number of tools that allow us to share our local codebases without the need to commit up code or configure our environments have spawned and matured into fully-fledged services. The two most common I've come across are [Visual Studio Code's Live Share](https://code.visualstudio.com/learn/collaboration/live-share) and [JetBrain IDE's Code With Me](https://www.jetbrains.com/code-with-me/).
+One of the ways to reduce friction is to use collaborative coding software. Thankfully, there are a number of tools out there that let us invite others to work directly within the codebase on the driver's machine. The two most common I've come across are [Visual Studio Code's Live Share](https://code.visualstudio.com/learn/collaboration/live-share) and [JetBrain IDE's Code With Me](https://www.jetbrains.com/code-with-me/).
 
-They are broadly the same in end-user experience: people have access to the codebase in their own text editor, they can "follow" other people on the code share, and even use terminals or debugging tools. What's more, there's little to no latency in writing code or running tests; when you - or a colleague - makes a change, everyone sees it instantly.
+They are broadly the same in end-user experience: people have access to the codebase in their own text editor, they can "follow" other people on the code share, and even use terminals or debugging tools. What's more, there's little to no latency in writing code or running tests; when you &mdash; or a colleague &mdash; makes a change, everyone sees it instantly.
 
-We found using these tools made a real difference; where once we were restricted to watching the driver type away on a low-resolution screen-share, we could now freely explore and interact with the codebase at our own pace and with our own tooling.
+We found using these tools made a real difference. Where once we were restricted to watching the driver type away on low resolution screen-share, we now had the freedom to explore and interact with the codebase at our own pace and with our own tooling.
 
-It helped us be more productive and aided the ongoing conversations more. But more importantly, it allowed us to _feel_ more fulfilled with our work. When you're working together for long periods of time, how we feel in the minutiae of our collaboration is key to making it sustainable in the long-term.
+It helped us be more productive and aided the ongoing conversations around our design. But more importantly, it allowed us to _feel_ more fulfilled with our work. When you're working together for long periods of time, how we feel in the minutiae of our collaboration is key to making it sustainable in the long-term.
 
-## Disciplined time management and taking breaks
+## Remember time management and breaks
 
 One study that explored newly remote workers during the COVID pandemic found that remote working removed many opportunities to take active breaks, positing that there were physical, environmental, and psychological barriers that prevented workers from stepping away from their desks more frequently[^4].
 
 This study's conclusions chimed with our initial experiences of remote working in the team. Despite all of us having used the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) during in-person collaboration, we found that it was all too easy to ignore the timer going off when working remotely.
 
-We would continue after the timer went off &mdash; for reasons we were never truly sure about &mdash; convinced that there were only a couple of *small* changes to make before our tests pass and the codebase returned to a committable, deployable state.
-
-Suffice to say, this was seldom actually the case.
-
 Collaborative coding can be intense, particularly when remote working tools add friction to the workflow; our lack of time management lead us to tread the path towards burnout and disengagement.
 
-For us, becoming more cogniscent to taking breaks in a remote setting meant adhering steadfastly to our pomodoro timer. We initially set our sessions to 25 minutes but quickly found that wasn't long enough for us. When we bumped it up to 40 minutes, we managed to reach a cadence that worked _for us_. Every time the timer went off, regardless of where we were in our work, we would take a break and step away from the desk.
+For us, becoming more cogniscent to taking breaks in a remote setting meant adhering steadfastly to our pomodoro timer. We found using a shared timer service, such as what [Cuckoo](https://cuckoo.team/) provide, useful to ensure we were **all** aware of when the timer went off. And when that bell chimed, regardless of where we were in our work, we would take a break and step away from the desk.
 
-It made a huge difference. While there were times where we genuinely were close to completing a certain piece of work when the timer went off, we
-
+It made a huge difference.
 
 ## Short, regular retrospectives are key to adapt
 
@@ -66,13 +62,13 @@ These may seem like small things, but when you're pairing remotely, it's these i
 
 Without regular retrospectives, we likely would've carried on with little reflection, and that'll have lead to a pairing experience neither of us would've been happy with.
 
-## Incremental change takes time
+## Incremental change takes time; but its effects can be profound
 
 Fundamentally, reducing friction in the developer experience is key to making remote collaborative coding sustainable for experienced practitioners and newcomers alike.
 
-What's more, the changes that positively impacted my experience the most were measured, incremental, and crucially, _small_. You don't need to overhaul everything you may have been doing in-person to make remote pairing or mobbing work for you.
+What's more, the changes that have positively impacted my experience the most were measured, incremental, and crucially, _small_. You don't need to overhaul everything you may have been doing in-person to make remote pairing or mobbing work for you.
 
-Fast feedback is core for charting a path towards a better experience, and while the impact of such changes may feel minimal individually, it's the compound effect that will make a profound difference for you and your team in the long-term.
+Fast feedback is core for charting a path towards a better experience, and while the impact of such changes may feel minimal individually, it's the compound effect that will make a profound, positive difference for you and your team in the long-term.
 
 [^1]: ["Remote work can boost productivity and curb burnout" - London School of Economics](https://blogs.lse.ac.uk/businessreview/2021/09/29/remote-work-can-boost-productivity-and-curb-burnout/)
 [^2]: [Survey reveals the mental and physical health impacts of home working during Covid-19](https://www.rsph.org.uk/about-us/news/survey-reveals-the-mental-and-physical-health-impacts-of-home-working-during-covid-19.html)
