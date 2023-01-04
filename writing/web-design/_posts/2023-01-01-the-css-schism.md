@@ -1,7 +1,7 @@
 ---
 title: "On Imperative and Declarative Web Design"
 layout: post
-description: "A look at two growing schools of thought in how we should approach CSS and web design."
+description: "An appraisal on two broad approaches to authoring CSS and web design."
 ---
 
 Over the last few months, the gods that be &mdash; the Twitter algorithm &mdash; thought all I wanted to see were tweets about CSS and design advice.
