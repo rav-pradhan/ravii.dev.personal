@@ -1,7 +1,7 @@
 ---
 title: "On Imperative and Declarative Web Design"
 layout: post
-description: "An appraisal on two broad approaches to authoring CSS and web design."
+description: "A look at two growing schools of thought in how we should approach CSS and web design."
 ---
 
 Over the last few months, the gods that be &mdash; the Twitter algorithm &mdash; thought all I wanted to see were tweets about CSS and design advice.
@@ -21,9 +21,9 @@ It reminded me a lot of my experiences back in early 2017 with the likes of [Boo
 
 Turns out this utility-first approach to web design is pretty popular! And with developers and designers alike.
 
-This initially surprised me. After all, CSS is a declarative language; yet exercising explicit control over how a browser styles things, in an imperative fashion, was a far more compelling approach for people.
+This initially surprised me. After all, CSS is a declarative language; yet exercising explicit control over how a browser styles things appeared to be a far more compelling approach for people.
 
-Inspired by [Sakichi Toyoda](https://en.wikipedia.org/wiki/Five_whys), I had to ask: why?
+But why?
 
 ## Understanding the Growth of Utility-first CSS
 
@@ -31,7 +31,7 @@ While you don't need to use them, frameworks provide a lot of benefits for worki
 
 Colour, spacing and typography properties, `grid` or `flex` values and attributes, responsive utilities: these are all provided to you in pregenerated, single-responsibility CSS classes that you can compose together to build the styles your HTML elements need. Using this approach, you rarely need to write new CSS in order to get your UIs styled as per designer mockups.
 
-Fundamentally, what utility-first CSS gives you is an **imperative design** approach to web design. You command the browser to apply styles via the classes you've set within the individual HTML elements. The browser then executes every styling application based on your command set.
+Fundamentally, what utility-first CSS gives you is an **imperative** approach to web design. You command the browser to apply styles via the classes you've set within the individual HTML elements. The browser then executes every styling application based on your command set.
 
 ### The "Why" of Imperative Design
 
@@ -39,9 +39,7 @@ There are a few key reasons why I think imperative design is consistently adopte
 
 #### It's output-focused
 
-You don't need to write any CSS.
-
-This is huge for teams who build web apps but have little interest in learning the intricacies of CSS specificity, cascade and functions, nor maintaining reams of CSS code. Utility-first frameworks generate all the classes you need from a manifest, and they're immediately available to use.
+You don't need to write any CSS. This is huge for teams who build web apps but have little interest in learning the intricacies of CSS specificity, cascade and functions, nor maintaining reams of CSS code. Utility-first frameworks generate all the classes you need from a manifest, and they're immediately available to use. And unlike Bootstrap and Bulma, you have complete control over how things look.
 
 As a result, you're quick to start and quick to get UI designed because you don't have to expend bandwidth thinking about CSS beyond understanding what properties you need.
 
@@ -81,7 +79,7 @@ Let's consider a couple of examples to demonstrate what a modern, declarative de
 
 An imperative approach to typography may define fixed font sizes that are then set based on fixed viewport widths. These are then applied on a per-element basis.
 
-On the other hand, a declarative approach accounts for design fluidity and externalities that cannot be controlled for, such as the user resizing their browser window to a size that sits between breakpoints. Instead of setting specific values, we define boundaries and an algorithm for the browser to make a decision. We *guide* the browser, rather than command it.
+On the other hand, a declarative approach accounts for design fluidity and externalities that cannot be controlled for, such as the user resizing their browser window to a size that sits in an uncomfortable space between breakpoints. Instead of setting specific values, we define boundaries and an algorithm for the browser to make a decision. We *guide* the browser, rather than command it.
 
 Subsequently, a declarative approach could look like this:
 
@@ -111,7 +109,7 @@ By taking a declarative approach, we have automated the font size for our headin
 
 ### Example 2: Consistent Margins Between Elements
 
-Let's now consider a simple user registration form that asks for a inputs from the user.
+Let's now consider a simple user registration form that asks for a few inputs from the user.
 
 We want to apply consistent vertical margin between the form elements.
 
@@ -126,7 +124,7 @@ With an imperative design approach, you would likely have an array of utility cl
 </form>
 ```
 
-Conceptually, this feels a touch odd. Margins provide us with whitespace that, in turn, visually defines the relationship between adjacent elements. Applying a margin to individual elements decouples sibling elements as they end up "possessing" their own whitespace. The relationship between elements is disrupted if any one of them don't have the correct margin class applied.
+Conceptually, this feels a touch odd. Margins provide us with whitespace that, in turn, visually defines the relationship between adjacent elements. Applying a margin to every individual elements decouples sibling elements as they end up "possessing" their own whitespace. The relationship between elements is disrupted if any one of them don't have the correct margin class applied.
 
 A declarative approach to this problem would involve leveraging the wonders of CSS specificity to set margin values at the context-level, which in this case is the form element.
 
