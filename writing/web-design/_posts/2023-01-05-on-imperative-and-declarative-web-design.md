@@ -176,7 +176,7 @@ In [*Thinking in Systems: A Primer*](https://en.wikipedia.org/wiki/Thinking_In_S
 
 > “...a measure of a system’s ability to survive and persist within a variable environment.”
 
-Designing for the web means designing for an inherently "variable environment". Given this, should we not assert "design fluidity" as a fitness function[^5] of our design systems? A user could be viewing your website on a 4" smartphone, a 32" ultra-wide monitor; even on a 42mm-wide smart-watch, for all we know.
+Designing for the web means designing for an inherently "variable environment". Given this, should we not assert "design fluidity" as a fitness function[^5] of our design systems? A user could be viewing your website on a palm-sized smartphone, an expansive ultra-wide monitor; even on a tiny smart-watch screen, for all we know.
 
 And while imperative design approaches can be made *resilient enough* through liberal use of media queries to capture broad use cases, it requires of a lot more work and micro-management of individual HTML elements to accomplish. Declarative design, on the other hand, works in partnership with modern CSS to achieve design fluidity from the get-go.
 
