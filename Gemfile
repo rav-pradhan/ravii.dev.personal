@@ -7,3 +7,7 @@ group :jekyll_plugins do
 	gem "jekyll-feed"
 	gem "jekyll-seo-tag"
 end
+
+gem "kramdown-syntax-coderay", "~> 1.0"
+
+gem "rouge", "~> 3.30"
