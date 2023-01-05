@@ -79,7 +79,7 @@ Let's consider a couple of examples to demonstrate what a modern, declarative ap
 
 Classically, typography has been defined with fixed font sizes that are then set based on equally fixed viewport widths. These are often applied on a per-element basis as a CSS class.
 
-A declarative approach accounts for design fluidity and externalities that cannot be controlled for, such as the user resizing their browser window to a size that sits in an uncomfortable space between breakpoints. Instead of setting specific values, we define boundaries and an algorithm for the browser to make a decision. We *guide* the browser, rather than prescribe it.
+In contrast, a declarative approach accounts for design fluidity and externalities that cannot be controlled for, such as the user resizing their browser window to a size that sits in an uncomfortable space between breakpoints. Instead of setting specific values, we define boundaries: we *guide* the browser, rather than command it.
 
 Subsequently, a declarative approach could look like this:
 
