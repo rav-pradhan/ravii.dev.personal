@@ -26,8 +26,8 @@
   --font-5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
 
   // colour
-  --emerald: rgb(41, 121, 85);
-  --font-colour: #46343a;
+  --accent: #04724d;
+  --font-colour: #0e3a53;
   --off-white: #f5f5f4;
   --off-blue: #e0e1e8;
 
@@ -60,7 +60,6 @@ h4 {
 
 h1 {
   font-size: var(--font-5);
-  color: var(--emerald);
   max-width: 20ch;
 }
 
@@ -85,7 +84,7 @@ li {
 
 a {
   color: var(--font-colour);
-  text-decoration-color: var(--emerald);
+  text-decoration-color: var(--accent);
 
   &:hover {
     text-underline-offset: 4px;
@@ -96,7 +95,7 @@ blockquote {
   padding-left: var(--space-s);
   margin-bottom: var(--space-m);
   max-width: 65ch;
-  border-left: 4px solid var(--emerald);
+  border-left: 4px solid var(--accent);
 }
 
 .wrapper {
@@ -166,7 +165,7 @@ blockquote {
   }
 
   &__about-the-author {
-    border-top: 2px solid var(--emerald);
+    border-top: 2px solid var(--accent);
     padding: var(--space-m) 0;
     display: flex;
     gap: var(--space-m);
@@ -195,7 +194,7 @@ blockquote {
     align-items: center;
     grid-column-gap: 1rem;
 
-    border: 2px solid var(--emerald);
+    border: 2px solid var(--accent);
     border-radius: 8px;
     font-family: var(--font-headings);
     font-weight: 700;
@@ -209,7 +208,7 @@ blockquote {
       padding: 8px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      background-color: var(--emerald);
+      background-color: var(--accent);
       color: var(--off-white);
     }
   }
@@ -267,7 +266,7 @@ blockquote {
 }
 
 .accent {
-  color: var(--emerald);
+  color: var(--accent);
 }
 
 .categories {
@@ -276,14 +275,14 @@ blockquote {
   --space: var(--space-xs);
 
   &__item {
-    border: 2px solid var(--emerald);
+    border: 2px solid var(--accent);
     border-radius: 8px;
     text-transform: capitalize;
     font-family: var(--font-headings);
     font-weight: 700;
 
     &:hover {
-      background-color: var(--emerald);
+      background-color: var(--accent);
     }
 
     a {
@@ -299,7 +298,7 @@ blockquote {
 }
 
 .site-footer {
-  border-top: 2px solid var(--emerald);
+  border-top: 2px solid var(--accent);
 
   display: flex;
   flex-wrap: wrap;

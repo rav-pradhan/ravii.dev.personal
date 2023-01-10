@@ -19,7 +19,7 @@
 
     &:hover {
       cursor: pointer;
-      background: var(--emerald);
+      background: var(--font-colour);
       color: var(--off-white);
     }
   }
@@ -45,13 +45,13 @@
       }
 
       &:focus {
-        outline-color: var(--emerald);
+        outline-color: var(--accent);
         outline-offset: 0.5rem;
       }
     }
 
     a.current-link {
-      color: var(--emerald);
+      color: var(--accent);
     }
   }
 }
