@@ -2,7 +2,7 @@
 ---
 
 @import "reset";
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap");
 
 :root {
   // spacing
@@ -30,15 +30,17 @@
   --emerald: rgb(41, 121, 85);
   --font-colour: #46343a;
   --off-white: #f5f5f4;
+  --off-blue: #e0e1e8;
 
   // Fonts
-  --font-body: "Atkinson Hyperlegible", sans-serif;
+  --font-body: "PT Serif", serif;
   --font-headings: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-  background-color: var(--off-white);
+  background-color: var(--off-blue);
+  background-image: url("/assets/images/bg-noise.png");
   display: flex;
   flex-direction: column;
   text-rendering: optimizeSpeed;
@@ -92,10 +94,10 @@ a {
 }
 
 blockquote {
-    padding-left: var(--space-s);
-    margin-bottom: var(--space-m);
-    max-width: 65ch;
-    border-left: 4px solid var(--emerald);
+  padding-left: var(--space-s);
+  margin-bottom: var(--space-m);
+  max-width: 65ch;
+  border-left: 4px solid var(--emerald);
 }
 
 .wrapper {
@@ -182,7 +184,7 @@ blockquote {
   }
 
   &__meta-container {
-    max-width: 55ch;
+    max-width: 70ch;
   }
 
   &__meta {
@@ -228,40 +230,39 @@ blockquote {
     }
 
     :is(h4) {
-        --space: var(--space-l);
+      --space: var(--space-l);
     }
 
     :is(h4) + * {
-        --space: var(--space-xs);
+      --space: var(--space-xs);
     }
 
     blockquote {
-        margin-top: var(--space-m);
-        margin-bottom: var(--space-s);
+      margin-top: var(--space-m);
+      margin-bottom: var(--space-s);
     }
 
     & .footnotes {
-        * {
-            font-size: var(--font--1);
-            max-width: 65ch;
+      * {
+        font-size: var(--font--1);
+        max-width: 65ch;
+      }
+
+      ol {
+        padding-left: 1rem;
+
+        > * {
+          margin-block: 0;
         }
 
-        ol {
-            padding-left: 1rem;
-
-            > * {
-                margin-block: 0;
-            }
-
-            > * + * {
-                margin-block-start: 0.8rem;
-            }
+        > * + * {
+          margin-block-start: 0.8rem;
         }
-
+      }
     }
 
     sup {
-        padding-left: 2px;
+      padding-left: 2px;
     }
   }
 }
