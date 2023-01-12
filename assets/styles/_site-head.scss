@@ -13,13 +13,13 @@
     border-radius: 8px;
     background: transparent;
     background-size: 200%;
-    border: 2px solid var(--font-colour);
+    border: 2px solid var(--accent);
     text-decoration: none;
     font-size: var(--font-1);
 
     &:hover {
       cursor: pointer;
-      background: var(--font-colour);
+      background: var(--accent);
       color: var(--off-white);
     }
   }
