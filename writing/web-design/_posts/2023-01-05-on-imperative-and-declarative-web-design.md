@@ -172,7 +172,7 @@ There are many layout possibilities that a straightforward, small CSS class like
 
 ## The "Why" of Declarative Design
 
-In [*Thinking in Systems: A Primer*](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer), Donella Meadows pithily talks about system resilience as:
+In [*Thinking in Systems: A Primer*](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer), Donella Meadows pithily describes system resilience as:
 
 > “...a measure of a system’s ability to survive and persist within a variable environment.”
 

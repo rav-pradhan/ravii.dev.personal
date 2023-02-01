@@ -33,7 +33,6 @@
     }
 
     a {
-      font-family: var(--font-headings);
       font-weight: 700;
       text-decoration-thickness: 2px;
       text-underline-offset: 2px;
@@ -45,13 +44,15 @@
       }
 
       &:focus {
-        outline-color: var(--accent);
         outline-offset: 0.5rem;
       }
     }
 
     a.current-link {
       color: var(--accent);
+      &:focus {
+        outline-color: var(--accent);
+      }
     }
   }
 }
