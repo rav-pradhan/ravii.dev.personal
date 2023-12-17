@@ -1,58 +1,57 @@
 .site-head {
-  padding-top: var(--space-s);
-  padding-bottom: var(--space-m);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-s);
-  justify-content: space-between;
-  align-items: center;
+	padding-top: var(--space-m);
+	padding-bottom: var(--space-m);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-s);
+	justify-content: flex-end;
+	align-items: center;
 
-  &__logo {
-    font-family: var(--font-headings);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background: transparent;
-    background-size: 200%;
-    border: 2px solid var(--accent);
-    text-decoration: none;
-    font-size: var(--font-1);
+	&__logo {
+		font-family: var(--font-headings);
+		padding: 0.5rem 1rem;
+		background: transparent;
+		background-size: 200%;
+		border: 2px solid var(--accent);
+		text-decoration: none;
+		font-size: var(--font-1);
 
-    &:hover {
-      cursor: pointer;
-      background: var(--accent);
-      color: var(--off-white);
-    }
-  }
+		&:hover {
+			cursor: pointer;
+			background: var(--accent);
+			color: var(--off-white);
+		}
+	}
 
-  &__navigation {
-    ul {
-      display: flex;
-      list-style-type: none;
-      padding: 0;
-      gap: var(--space-s);
-    }
+	&__navigation {
+		ul {
+			display: flex;
+			list-style-type: none;
+			padding: 0;
+			gap: var(--space-s);
+		}
 
-    a {
-      font-weight: 700;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 2px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+		a {
+			font-weight: 700;
+			text-decoration-thickness: 2px;
+			text-underline-offset: 2px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
 
-      &:hover {
-        text-underline-offset: 5px;
-      }
+			&:hover {
+				text-underline-offset: 5px;
+			}
 
-      &:focus {
-        outline-offset: 0.5rem;
-      }
-    }
+			&:focus {
+				outline-offset: 0.5rem;
+			}
+		}
 
-    a.current-link {
-      color: var(--accent);
-      &:focus {
-        outline-color: var(--accent);
-      }
-    }
-  }
+		a.current-link {
+			color: var(--accent);
+			&:focus {
+				outline-color: var(--accent);
+			}
+		}
+	}
 }
